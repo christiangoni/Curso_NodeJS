@@ -1,7 +1,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
-var User = require("./models/user");
+// acceso a modelo BBDD exportado
+var User = require("./models/user").User;
 
 app.use(express.static('public'));
 app.use(express.static('assets'));
