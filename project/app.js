@@ -30,8 +30,11 @@ app.post("/users", function(req, res) {
         password: req.body.password,
         password_confirmation: req.body.password_confirmation
     });
-    console.log(password_confirmation);
-    user.save(function() {
+    console.log(user.password_confirmation);
+    user.save(function(err) {
+        if (err) {
+            console.log(String(err));
+        }
         res.send("Guardamos tus datos");
     });
 })
