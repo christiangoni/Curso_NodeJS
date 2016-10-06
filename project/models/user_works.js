@@ -6,24 +6,10 @@ mongoose.connect("mongodb://localhost/myproject");
 // validaciones se ejecutan en metodo save
 var posibles_valores = ["M", "F"];
 var email_match = [/^\w+([\.-]?\w+)*@\w+([\.-]?\w{2,3})+$/, "Coloca email valido"];
-var password_validation = {
-    validator: function(p) {
-        return this.password_confirmation == p;
-    },
-    message: "Passwords no coinciden"
-}
 var user_schema = new Schema({
     name: String,
-    username: { 
-        type: String, 
-        required: true, 
-        maxlength: [50, "Username maximo de 50 carac"] 
-    },
-    password: {
-        type: String,
-        minlength: [8, "Pass muy corta"],
-        validate: password_validation
-    },
+    username: { type: String, required: true, maxlength: [50, "Username maximo de 50 carac"] },
+    password: String,
     //email: {type: String, required: true},
     email: { type: String, required: "El correo es obligatorio", match: email_match },
     birth: Date,
