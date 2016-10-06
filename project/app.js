@@ -3,17 +3,24 @@ var bodyParser = require("body-parser");
 var app = express();
 // acceso a modelo BBDD exportado
 var User = require("./models/user").User;
+// manejar sesiones
+var session = require("express-session");
 
 app.use(express.static('public'));
 app.use(express.static('assets'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(session({
+    secret: "1654erfrfeff89w4e8f49f",
+    resave: false,
+    saveUninitialized: false
+}));
 
 app.set("view engine", "pug");
 
 app.get('/', function(req, res) {
+    console.log(req.session.user_id);
     res.render('index');
 });
 
@@ -51,9 +58,10 @@ app.post("/users", function(req, res) {
 app.post("/sessions", function(req, res) {
     // devuelve array de docs que cumple condicion
     // query, [campos que queremos,] callback
-    User.findOne({ email: req.body.email, password: req.body.password }, "", function(err, doc) {
-        console.log(doc);
-        res.send("VAMOS");
+    User.findOne({ email: req.body.email, password: req.body.password }, "", function(err, user) {
+        console.log(user);
+        req.session.user_id = user._id;
+        res.send("VAMOS, Sesion cread");
     });
 });
 
