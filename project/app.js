@@ -32,6 +32,17 @@ app.post("/users", function(req, res) {
         username: req.body.username
     });
     console.log(user.password_confirmation);
+    // save using promises
+    user.save().then(function(us){
+        // then => cuando retorna correctamen
+        res.send("Guardo correctamente");
+    },function(err){
+        if(err){
+            console.log(String(err));
+            res.send("No se pudo guarda la info");
+        }
+    });
+    /*
     user.save(function(err) {
         if (err) {
             console.log(String(err));
@@ -40,7 +51,7 @@ app.post("/users", function(req, res) {
             res.send("Guardamos tus datos");
         }
 
-    });
+    });*/
 })
 
 app.listen(8080);
