@@ -6,7 +6,7 @@ var User = require("./models/user").User;
 // manejar sesiones
 var session = require("express-session");
 // rutas modulares
-var router_App = require("./routes_app");
+var router_app = require("./router_app");
 var session_middleware = require("./middlewares/session");
 
 app.use(express.static('public'));
@@ -19,8 +19,10 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
-app.use("/app", router_App);
+
 app.use("/app", session_middleware);
+app.use("/app", router_app);
+
 app.set("view engine", "pug");
 
 /* usuario logueado => /app */
