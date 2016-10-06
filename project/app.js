@@ -17,10 +17,14 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.get('/login', function(req, res) {
+app.get('/signup', function(req, res) {
     User.find(function(err, doc) {
         console.log(doc);
     });
+    res.render('signup');
+});
+
+app.get('/login', function(req, res) {
     res.render('login');
 });
 
@@ -33,25 +37,24 @@ app.post("/users", function(req, res) {
     });
     console.log(user.password_confirmation);
     // save using promises
-    user.save().then(function(us){
+    user.save().then(function(us) {
         // then => cuando retorna correctamen
         res.send("Guardo correctamente");
-    },function(err){
-        if(err){
+    }, function(err) {
+        if (err) {
             console.log(String(err));
             res.send("No se pudo guarda la info");
         }
     });
-    /*
-    user.save(function(err) {
-        if (err) {
-            console.log(String(err));
-            res.send(String(err));
-        } else {
-            res.send("Guardamos tus datos");
-        }
+});
 
-    });*/
-})
+app.post("/sessions", function(req, res) {
+    // devuelve array de docs que cumple condicion
+    // query, [campos que queremos,] callback
+    User.findOne({ email: req.body.email, password: req.body.password }, "", function(err, doc) {
+        console.log(doc);
+        res.send("VAMOS");
+    });
+});
 
 app.listen(8080);
