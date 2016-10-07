@@ -1,0 +1,213 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\chist\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'cookie-session',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.8
+3 info using node@v4.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData cookie-session
+8 silly fetchNamedPackageData cookie-session
+9 silly mapToRegistry name cookie-session
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'cookie-session',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'cookie-session',
+12 silly mapToRegistry   name: 'cookie-session',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/cookie-session
+14 verbose request uri https://registry.npmjs.org/cookie-session
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 14:38:11
+17 verbose request id f07bf999a825be2a
+18 verbose etag "EMWJ3Q6N4EI9S4UELZ6QXYKQP"
+19 http request GET https://registry.npmjs.org/cookie-session
+20 http 304 https://registry.npmjs.org/cookie-session
+21 verbose headers { date: 'Fri, 07 Oct 2016 12:38:21 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"EMWJ3Q6N4EI9S4UELZ6QXYKQP"',
+21 verbose headers   age: '53',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-lhr6346-LHR',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1475843901.149734,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Fri, 07 Oct 2016 12:38:21 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"EMWJ3Q6N4EI9S4UELZ6QXYKQP"',
+22 silly get     age: '53',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-lhr6346-LHR',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1475843901.149734,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/cookie-session from cache
+24 verbose get saving cookie-session to C:\Users\chist\AppData\Roaming\npm-cache\registry.npmjs.org\cookie-session\.cache.json
+25 verbose correctMkdir C:\Users\chist\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule cookie-session@2.0.0-alpha.1 checking installable status
+39 silly cache add args [ 'cookie-session', null ]
+40 verbose cache add spec cookie-session
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'cookie-session',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'cookie-session',
+41 silly cache add   name: 'cookie-session',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed cookie-session@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for cookie-session
+44 info addNameTag [ 'cookie-session', 'latest' ]
+45 silly mapToRegistry name cookie-session
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'cookie-session',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'cookie-session',
+48 silly mapToRegistry   name: 'cookie-session',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/cookie-session
+50 verbose addNameTag registry:https://registry.npmjs.org/cookie-session not in flight; fetching
+51 verbose get https://registry.npmjs.org/cookie-session not expired, no request
+52 silly addNameTag next cb for cookie-session with tag latest
+53 silly addNamed cookie-session@2.0.0-alpha.1
+54 verbose addNamed "2.0.0-alpha.1" is a plain semver version for cookie-session
+55 silly cache afterAdd cookie-session@2.0.0-alpha.1
+56 verbose afterAdd C:\Users\chist\AppData\Roaming\npm-cache\cookie-session\2.0.0-alpha.1\package\package.json not in flight; writing
+57 verbose correctMkdir C:\Users\chist\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+58 verbose afterAdd C:\Users\chist\AppData\Roaming\npm-cache\cookie-session\2.0.0-alpha.1\package\package.json written
+59 silly fetchNamedPackageData cookies
+60 silly mapToRegistry name cookies
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry data Result {
+63 silly mapToRegistry   raw: 'cookies',
+63 silly mapToRegistry   scope: null,
+63 silly mapToRegistry   escapedName: 'cookies',
+63 silly mapToRegistry   name: 'cookies',
+63 silly mapToRegistry   rawSpec: '',
+63 silly mapToRegistry   spec: 'latest',
+63 silly mapToRegistry   type: 'tag' }
+64 silly mapToRegistry uri https://registry.npmjs.org/cookies
+65 verbose request uri https://registry.npmjs.org/cookies
+66 verbose request no auth needed
+67 info attempt registry request try #1 at 14:38:12
+68 verbose etag "3YCU0QCV4QVV3MDWQDL424MER"
+69 http request GET https://registry.npmjs.org/cookies
+70 http 304 https://registry.npmjs.org/cookies
+71 verbose headers { date: 'Fri, 07 Oct 2016 12:38:21 GMT',
+71 verbose headers   via: '1.1 varnish',
+71 verbose headers   'cache-control': 'max-age=300',
+71 verbose headers   etag: '"3YCU0QCV4QVV3MDWQDL424MER"',
+71 verbose headers   age: '43',
+71 verbose headers   connection: 'keep-alive',
+71 verbose headers   'x-served-by': 'cache-lhr6346-LHR',
+71 verbose headers   'x-cache': 'HIT',
+71 verbose headers   'x-cache-hits': '1',
+71 verbose headers   'x-timer': 'S1475843901.345994,VS0,VE0',
+71 verbose headers   vary: 'Accept-Encoding' }
+72 silly get cb [ 304,
+72 silly get   { date: 'Fri, 07 Oct 2016 12:38:21 GMT',
+72 silly get     via: '1.1 varnish',
+72 silly get     'cache-control': 'max-age=300',
+72 silly get     etag: '"3YCU0QCV4QVV3MDWQDL424MER"',
+72 silly get     age: '43',
+72 silly get     connection: 'keep-alive',
+72 silly get     'x-served-by': 'cache-lhr6346-LHR',
+72 silly get     'x-cache': 'HIT',
+72 silly get     'x-cache-hits': '1',
+72 silly get     'x-timer': 'S1475843901.345994,VS0,VE0',
+72 silly get     vary: 'Accept-Encoding' } ]
+73 verbose etag https://registry.npmjs.org/cookies from cache
+74 verbose get saving cookies to C:\Users\chist\AppData\Roaming\npm-cache\registry.npmjs.org\cookies\.cache.json
+75 verbose correctMkdir C:\Users\chist\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+76 silly resolveWithNewModule cookies@0.5.1 checking installable status
+77 silly cache add args [ 'cookies@0.5.1', null ]
+78 verbose cache add spec cookies@0.5.1
+79 silly cache add parsed spec Result {
+79 silly cache add   raw: 'cookies@0.5.1',
+79 silly cache add   scope: null,
+79 silly cache add   escapedName: 'cookies',
+79 silly cache add   name: 'cookies',
+79 silly cache add   rawSpec: '0.5.1',
+79 silly cache add   spec: '0.5.1',
+79 silly cache add   type: 'version' }
+80 silly addNamed cookies@0.5.1
+81 verbose addNamed "0.5.1" is a plain semver version for cookies
+82 silly mapToRegistry name cookies
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry data Result {
+85 silly mapToRegistry   raw: 'cookies',
+85 silly mapToRegistry   scope: null,
+85 silly mapToRegistry   escapedName: 'cookies',
+85 silly mapToRegistry   name: 'cookies',
+85 silly mapToRegistry   rawSpec: '',
+85 silly mapToRegistry   spec: 'latest',
+85 silly mapToRegistry   type: 'tag' }
+86 silly mapToRegistry uri https://registry.npmjs.org/cookies
+87 verbose addNameVersion registry:https://registry.npmjs.org/cookies not in flight; fetching
+88 verbose get https://registry.npmjs.org/cookies not expired, no request
+89 silly mapToRegistry name cookies
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry data Result {
+92 silly mapToRegistry   raw: 'cookies',
+92 silly mapToRegistry   scope: null,
+92 silly mapToRegistry   escapedName: 'cookies',
+92 silly mapToRegistry   name: 'cookies',
+92 silly mapToRegistry   rawSpec: '',
+92 silly mapToRegistry   spec: 'latest',
+92 silly mapToRegistry   type: 'tag' }
+93 silly mapToRegistry uri https://registry.npmjs.org/cookies
+94 verbose addRemoteTarball https://registry.npmjs.org/cookies/-/cookies-0.5.1.tgz not in flight; adding
+95 verbose addRemoteTarball [ 'https://registry.npmjs.org/cookies/-/cookies-0.5.1.tgz',
+95 verbose addRemoteTarball   '2560c304fe8f8cbd002e08b9599d2e7479d37298' ]
+96 info retry fetch attempt 1 at 14:38:12
+97 info attempt registry request try #1 at 14:38:12
+98 http fetch GET https://registry.npmjs.org/cookies/-/cookies-0.5.1.tgz
+99 http fetch 200 https://registry.npmjs.org/cookies/-/cookies-0.5.1.tgz
+100 warn retry will retry, error on last attempt: Error: EBUSY: resource busy or locked, rename 'C:\Users\chist\AppData\Local\Temp\npm-6736-d52c2d35\registry.npmjs.org\cookies\-\cookies-0.5.1.tgz.2096297346' -> 'C:\Users\chist\AppData\Local\Temp\npm-6736-d52c2d35\registry.npmjs.org\cookies\-\cookies-0.5.1.tgz'
+101 verbose stack TypeError: tarball.destroy is not a function
+101 verbose stack     at WriteStreamAtomic.<anonymous> (C:\Users\chist\AppData\Roaming\npm\node_modules\npm\lib\cache\add-remote-tarball.js:97:15)
+101 verbose stack     at emitOne (events.js:82:20)
+101 verbose stack     at WriteStreamAtomic.emit (events.js:169:7)
+101 verbose stack     at WriteStreamAtomic.emit (C:\Users\chist\AppData\Roaming\npm\node_modules\npm\node_modules\fs-write-stream-atomic\index.js:60:34)
+101 verbose stack     at C:\Users\chist\AppData\Roaming\npm\node_modules\npm\node_modules\fs-write-stream-atomic\index.js:89:19
+101 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+102 verbose cwd C:\xampp\htdocs\dashboard\Curso_NodeJS\project
+103 error Windows_NT 10.0.10586
+104 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\chist\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "cookie-session" "--save"
+105 error node v4.6.0
+106 error npm  v3.10.8
+107 error tarball.destroy is not a function
+108 error If you need help, you may report this error at:
+108 error     <https://github.com/npm/npm/issues>
+109 verbose exit [ 1, true ]

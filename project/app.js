@@ -4,10 +4,12 @@ var app = express();
 // acceso a modelo BBDD exportado
 var User = require("./models/user").User;
 // manejar sesiones
-var session = require("express-session");
+// var session = require("express-session");
 // rutas modulares
 var router_app = require("./router_app");
 var session_middleware = require("./middlewares/session");
+// cookies
+var session = require("cookie-session");
 
 app.use(express.static('public'));
 app.use(express.static('assets'));

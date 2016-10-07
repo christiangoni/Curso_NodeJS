@@ -13,6 +13,7 @@
         "pug": "^2.0.0-beta6",
         "body-parser": "1.15.2",
         "mongoose": "^4.6.2"
+        "cookie-session": "^2.0.0-alpha.1"
     },
     "devDependencies": {}
 }
