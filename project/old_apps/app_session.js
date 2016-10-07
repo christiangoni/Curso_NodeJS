@@ -6,8 +6,8 @@ var User = require("./models/user").User;
 // rutas modulares
 var router_app = require("./router_app");
 var session_middleware = require("./middlewares/session");
-// cookie-session
-var session = require("cookie-session");
+// manejar sesiones
+var session = require("express-session");
 
 
 
