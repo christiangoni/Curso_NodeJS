@@ -2,16 +2,14 @@ extends ../../layout.pug
 block contenido
     div(class="col-md-8 remove-float center-block text-center big-top-space")
         h1 Subir nueva imagen
-        form(action="/img",method="POST")
+        form(action="/app/img",method="POST")
             div(class="form-group")
                 label(for="title") Titulo
                 input(type="text",name="title",placeholder="Titulo imagen",id="title" class="form-control")
             div
                 label(for="archivo") Imagen
-                input(type="file",name="archivo",id="archivo" class="form-control",placeholder="password")
+                input(type="file",name="archivo",id="archivo" class="form-control")
             div(class="row top-space")
-                div(class="col-xs-12 col-sm-6")
+                div(class="col-xs-12 col-sm-6 top-space")
                     input(type="submit" value="Subir" class="btn btn-info")
-                div(class="col-xs-12 col-sm-6")
-                    a(href="/signup") No tengo cuenta, crear
             

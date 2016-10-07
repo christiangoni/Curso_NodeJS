@@ -70,7 +70,9 @@ app.post("/sessions", function(req, res) {
     User.findOne({ email: req.body.email, password: req.body.password }, "", function(err, user) {
         console.log(user);
         req.session.user_id = user._id;
-        res.send("VAMOS, Sesion cread");
+        //res.redirect("/app/");
+        //res.render("./app/home");
+        res.redirect("/app");
     });
 });
 
