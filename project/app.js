@@ -7,24 +7,23 @@ var User = require("./models/user").User;
 var router_app = require("./router_app");
 var session_middleware = require("./middlewares/session");
 // cookie-session
-var session = require("cookie-session");
-
-
-
+var cookieSession = require("cookie-session");
+// admitir metodo put
+var methodOverride = require("method-override");
 
 app.use(express.static('public'));
-app.use(express.static('assets'));
+//app.use(express.static('assets'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(session({
-    secret: "1654erfrfeff89w4e8f49f",
-    resave: false,
-    saveUninitialized: false
+// use cookie-session module
+app.use(cookieSession({
+    name: "session",
+    keys: ["key1", "key2"]
 }));
-
 app.use("/app", session_middleware);
 app.use("/app", router_app);
+app.use(methodOverride("_method"));
 
 app.set("view engine", "pug");
 

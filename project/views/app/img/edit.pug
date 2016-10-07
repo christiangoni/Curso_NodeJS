@@ -1,0 +1,12 @@
+extends ../../layout.pug
+block contenido
+    div(class="col-md-8 remove-float center-block text-center big-top-space")
+        h1 Editar imagen
+        h2=image.title
+        form(action="/app/img/#{image._id}?_method=PUT",method="POST")
+            div(class="form-group")
+                label(for="title") Titulo
+                input(type="text",value="#{image.title}",name="title",id="title" class="form-control")
+            div(class="row top-space")
+                div(class="col-xs-12 col-sm-6 top-space")
+                    input(type="submit" value="Guardar cambios" class="btn btn-info")
